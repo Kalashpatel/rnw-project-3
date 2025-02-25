@@ -24,9 +24,11 @@ h1{
     width: calc(100% / 8);
     height: calc(100% / 8);
     background-color: rgb(225, 243, 155);
+    float: left;
 } 
 .boxgreen{
     width: calc(100% / 8);
     height: calc(100% / 8);
     background-color: rgb(21, 121, 41);
+    float: left;
 }  
