@@ -5,6 +5,28 @@
 }
 h1{
     text-align: center;
-    margin: 20px 0;
+    margin: 10px 0;
     color: brown;
-}   
+}
+.box{
+    width: 650px;
+    height: 650px;
+    background-color: rgb(21, 121, 41);
+    margin: 10px auto;
+    border: 30px solid rgb(2, 96, 18);
+}
+.boxmain{
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(225, 243, 155);
+}
+.boxcream{
+    width: calc(100% / 8);
+    height: calc(100% / 8);
+    background-color: rgb(225, 243, 155);
+} 
+.boxgreen{
+    width: calc(100% / 8);
+    height: calc(100% / 8);
+    background-color: rgb(21, 121, 41);
+}  
