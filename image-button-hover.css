@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    background-color: blanchedalmond;
+}
+h1{
+    text-align: center;
+    margin: 20px;
+    font-size: 70px;
+    font-family: 'Tangerine';
+    color: chocolate;
+    text-decoration: underline;
+}
+h3{
+    text-align: center;
+    margin: 20px;
+    font-size: 50px;
+    font-family: 'Tangerine';
+    color: rgb(51, 30, 210);
+    text-decoration: underline;
+}
+.about {
+    text-align: center;
+    position: relative;
+  }
+  .about h2 {
+    margin-top: 30px;
+    font-size: 40px;
+    color: #a3076f;
+    text-decoration: underline;
+    text-decoration-color: rebeccapurple;
+    text-decoration-style: dotted;
+  }
+  .about i{
+    display: inline-block;
+    animation: heart 1s ease infinite;
+    font-size: 30px;
+    color: #e81212;
+  }
+  .about span::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 5px;
+    background-color: #100f0f;
+    left: 49.5%;
+    transform: translateX(50%);
+    top: 60px;
+  }
+  .about span::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 5px;
+    background-color: #100f0f;
+    right: 49.5%;
+    transform: translateX(-50%);
+    top: 60px;
+  }
+  @keyframes heart {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .style {
+    text-align: center;
+    margin: 70px auto;
+    color: rgb(20, 77, 220);
+    font-size: 30px;
+    position: relative;
+  }
+  .style h2 {
+    position: relative;
+  }
+  .style .red-line {
+    position: absolute;
+    width: 50px;
+    height: 8px;
+    background-color: #e81212;
+    margin: 10px auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .style .red-line::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -70px;
+    height: 3px;
+    width: 70px;
+    background-color: #e81212;
+  }
+  .style .red-line::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    right: -70px;
+    height: 3px;
+    width: 70px;
+    background-color: #e81212;
+  }
+  .imgbox3{
+    margin: 50px auto;
+    position: relative;
+    width: 600px;
+    height: 600px;
+    background-image: url(../images/field.jpg);
+    background-size: cover;
+    border:  10px;
+    cursor: pointer;
+  }
+  .imgbox3 .title{
+    position: relative;
+    display: flex;
+    height: 250px;
+    width: 90%;
+    top: 5%;
+    left: 5%;
+    
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    align-items: center;
+    color: #fff;
+    /* border: solid 3px white;
+    border-radius: 10px;
+    
+    gap: 5px;
+    transition: all 0.5s ease; */
+  }
+  .imgbox3::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(210, 105, 30, 0.4);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  .imgbox3:hover::before{
+    opacity: 1;
+  }
+  .effect{
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    border: solid 2px white;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+  }
+  .imgbox3:hover .title .effect{
+    top: 140%;
+    bottom: 5%;
+    height: 150px;
+  }
+  .imgbox3 .title span{
+    margin-left: 20px;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 100px;
+  }
+  .imgbox3 .title h2{
+    
+    display: inline-block;
+    font-size: 33px;
+    font-weight: 500px;
+  }
+  .imgbox3 p{
+    position: absolute;
+    width: 90%;
+    height: 150px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    bottom: 5%;
+    left: 5%;
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Bebas Neue';
+    letter-spacing: 2px;
+    opacity: 0;
+    transition: opacity 1s ease;
+    margin-left: 15px;
+    margin-right: 20px;
+  }
+  .imgbox3:hover p{
+    opacity: 1;
+  }
+  .imgbox4 {
+    margin: 50px auto;
+    position: relative;
+    width: 600px;
+    height: 600px;
+    background-image: url(../images/sunflower.jpg);
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Zoom effect on hover */
+  .imgbox4:hover {
+    transform: scale(1.05);
+  }
+  
+  .imgbox4::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(2, 238, 30, 0.3);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .imgbox4:hover::before {
+    opacity: 1;
+  }
+  
+  /* Flower container */
+  .imgbox4 .flower {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+    text-align: center;
+  }
+  
+  .imgbox4 .flower h2 {
+    font-size: 50px;
+    color: #fff;
+    position: relative;
+  }
+  
+  /* Underline Animation */
+  .imgbox4 .flower::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: #fff;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .imgbox4:hover .flower::before {
+    width: 100%;
+  }
+  
+  /* Sliding and fading text effect */
+  .imgbox4 .flower::after {
+    content: "Keep your face to the sunshine and you cannot see the shadows.";
+    position: absolute;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    font-size: 30px;
+    color: white;
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+  
+  .imgbox4:hover .flower::after {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+  .button {
+    position: relative;
+    margin: 30px auto;
+    width: 150px;
+    height: 50px;
+    background-color: aquamarine;
+    text-align: center;
+    padding: 5px;
+    line-height: 40px;
+    border-radius: 10%;
+    border: solid 2px aquamarine;
+    transition: all 0.5s ease;
+  }
+  
+  .button .effect-3 a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    transition: color 0.5s ease;
+  }
+  
+  .button:hover {
+    background-color: white;
+    transform: scale(1.1);
+  }
+  
+  .button:hover .effect-3 a {
+    color: aquamarine;
+  }
+  .button2 {
+    position: relative;
+    margin: 30px auto;
+    width: 200px;
+    height: 70px;
+    background-color: white;
+    text-align: center;
+    line-height: 70px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+  }
+  .button2 a{
+    text-decoration: none;
+    color: rgb(9, 20, 243);
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .button2 a::before,
+  .button2 a::after {
+    content: "";
+    position: absolute;
+    width: 20px;  /* Short width initially */
+    height: 20px; /* Short height initially */
+    background: none;
+    border: 2px solid  rgb(9, 20, 243);
+    transition: all 0.4s ease-in-out;
+  }
+  
+  /* Top-left border */
+  .button2 a::before {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+  }
+  
+  /* Bottom-right border */
+  .button2 a::after {
+    bottom: 0;
+    right: 0;
+    border-left: none;
+    border-top: none;
+  }
+  
+  /* Hover effect to expand the borders */
+  .button2 a:hover::before,
+  .button2 a:hover::after {
+    width: 100%;
+    height: 100%;
+  }
