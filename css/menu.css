@@ -1,0 +1,54 @@
+/* Basic styling */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+  }
+  
+  /* Dropdown menu styling */
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    min-width: 150px;
+    display: none; /* Initially hidden */
+  }
+  
+  .dropdown-menu li {
+    display: block;
+  }
+  
+  .dropdown-menu li a {
+    padding: 10px;
+    display: block;
+    color: white;
+  }
+  
+  /* Show dropdown when hovering */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* Hover effect */
+  .dropdown-menu li a:hover {
+    background-color: #555;
+  }
+  
