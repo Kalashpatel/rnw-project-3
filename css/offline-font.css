@@ -320,6 +320,34 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Arialic Hollow';
+    src: url('../fonts/ArialicHollow.woff2') format('woff2'),
+        url('../fonts/ArialicHollow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Nordin Slab Free';
+    src: url('../fonts/NordinSlab.woff2') format('woff2'),
+        url('../fonts/NordinSlab.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nordin Slab Free Outline';
+    src: url('../fonts/NordinSlab-Outline.woff2') format('woff2'),
+        url('../fonts/NordinSlab-Outline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 
 
 
